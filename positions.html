@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Positions Practice</title>
-  </head>
-  <body style="
+
+<head>
+  <title>Positions Practice</title>
+</head>
+
+<body style="
     height: 3000px;
     padding-top: 60px;
     padding-left: 80px;
     ">
-    <div style="
+  <div style="
     background-color: black;
     color: white;
     position: fixed;
@@ -17,7 +19,7 @@
     right: 0px;
     height: 50px;
   ">Header</div>
-    <div style="
+  <div style="
       background-color: green;
       color: white;
       position: fixed;
@@ -26,19 +28,51 @@
       top: 50px;
       width: 72px;
     ">
-      sidebar
-    </div>
-    
+    sidebar
     <div style="
+      position: absolute;
+      background-color: red;
+      color: white;
+      left: 0;
+      top: 30px
+    ">
+      absolute inside sidebar
+    </div>
+  </div>
+
+  <div style="
+      position: absolute;
+      background-color: red;
+      color: white;
+      left: 0;
+      top: 10px
+    ">
+    absolute
+  </div>
+
+  <div style="
       background-color: lightblue;
       height: 200px;
       width: 200px;
       position: static;
     ">div 1</div>
-    <div style="
+
+  <div style="
     background-color: lightpink;
     height: 200px;
     width: 200px;
-  ">div 2</div>
-  </body>
+    position: relative;
+  ">div 2
+    <div style="
+    position: absolute;
+    background-color: black;
+    color: white;
+    bottom: 10px;
+    right: 1 0px
+  ">
+      absolute inside relative div
+    </div>
+  </div>
+</body>
+
 </html>
